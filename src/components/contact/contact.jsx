@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact" id="section">
+    <section className="contact" id="contact">
       <h2>Bog'lanish</h2>
       <div className="contact-socials">
         <h4 style={{ fontSize: 25 }}>Ijtimoiy tarmoqlarda biz:</h4>
