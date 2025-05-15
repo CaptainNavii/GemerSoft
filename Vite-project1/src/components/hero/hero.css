@@ -1,0 +1,46 @@
+.hero {
+    padding: 8rem 5%;
+    text-align: center;
+    background: radial-gradient(circle at top left, #82c42f, #48e778);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    animation: fadeUp 1s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    animation: fadeUp 1.5s ease-out;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero .btn {
+    padding: 1rem 2rem;
+    background: white;
+    color: #82c42f;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }

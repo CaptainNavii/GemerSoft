@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tagesschrift&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.section {
+  padding: 5rem 5%;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+.section h2,
+h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #82c42f;
+  border-radius: 2px;
+}
+footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  color: #6b7280;
+  background: #f9fafb;
+  font-size: 0.95rem;
+  animation: fadeIn 2s ease-in;
+}

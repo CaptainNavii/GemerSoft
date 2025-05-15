@@ -1,0 +1,95 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: min(2rem, 5%);
+}
+.card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  animation: zoomIn 0.6s ease-in-out;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #82c42f;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+}
+
+.card .btn {
+  padding: 1rem 2rem;
+  background: #82c42f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: auto;
+}
+
+.card .btn:hover {
+  background: #9fe748;
+  transform: scale(1.05);
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.section {
+  padding: 5rem 5%;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.services h2,
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+

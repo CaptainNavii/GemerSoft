@@ -1,0 +1,116 @@
+.contact {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #82c42f;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #82c42f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #9fe748;
+}
+
+.form-status {
+  margin-top: 18px;
+  color: #82c42f;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #82c42f;
+  border-radius: 2px;
+}
+.contact-socials {
+  text-align: center;
+  margin: 50px;
+  justify-content: space-between;
+}
+
+.social-icons a {
+  margin-top: 20px;
+  color: #333;
+  transition: color 0.3s;
+  padding: 5px;
+}
+.social-icons a i:hover {
+  color: var(--accent-color);
+}
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #82c42f;
+  border-radius: 2px;
+}
+.contact h2,
+h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
